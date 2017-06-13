@@ -1,0 +1,125 @@
+/*基本样式*/
+body {
+	font-family: "Microsoft YaHei";
+	font-size: 18px;
+	color: #666;
+
+}
+
+/*清除浮动*/
+.claerfix:before,
+.clearfix:after {
+    content: ' ';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*头部LOGO*/
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+
+header .logo {
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 60px;
+    background: url(../img/logo.png) no-repeat center center;
+}
+
+/*头部导航*/
+header nav {
+    display: block;
+    float: left;
+}
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 25px;
+    text-align: center;
+}
+
+header nav ul li a span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: -10px;
+    background-image: url(../img/icon-new.png);
+}
+
+header nav ul li a:hover {
+    background-color: #363c41;
+}
+
+/*头像，通知以及购物车*/
+header .loginarea {
+    float: right;
+}
+
+header .loginarea ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .loginarea ul li {
+    display: block;
+    float: right;
+
+}
+
+header .loginarea ul li a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+header .loginarea ul li a .notice {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/icon-1-sprite_w22.png);
+    background-position: 0 -44px;
+}
+
+header .loginarea ul li a .shopping-cart {
+    display: inline-block;
+    width: 18px;
+    height: 22px;
+    background-image: url(../img/shopcar.png);
+    background-position: 0 -210px;
+}
+
+header .loginarea ul li a img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+}
+
+header .loginarea ul li a:hover {
+    background-color: #363c41;
+}
